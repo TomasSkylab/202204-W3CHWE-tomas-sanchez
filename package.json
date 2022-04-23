@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "compile": "sass public/sass:public/css",
-    "watch": "sass public/sass:public/css --watch",
+    "compile": "sass public/sass/style.scss public/css/style.css",
     "prepare": "husky install"
   },
   "keywords": [],
