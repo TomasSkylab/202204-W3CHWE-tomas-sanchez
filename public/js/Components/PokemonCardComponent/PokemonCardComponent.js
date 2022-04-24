@@ -1,34 +1,34 @@
 import Component from "../Component.js";
 
-class PokemonCardComponent extends Component {
-  name;
+class PokemoListComponent extends Component {
+  pokemon;
 
-  type;
-
-  image;
-
-  constructor(parentElement, name, image, type) {
-    super(parentElement, "ul", "pokemonCard");
-    this.name = name;
-    this.image = image;
-    this.type = type;
+  constructor(parentElement, pokemon) {
+    super(parentElement, "li", "pokemonCard");
+    this.pokemon = pokemon;
     this.render();
   }
 
   render() {
     this.element.innerHTML = `
-    <li class="pokemonCard">
-            <p>1</p>
+    
+             
             <img
               class="pokemonCard__image"
-              src="${this.image}"
+              src="${this.pokemon.sprites.front_default}"
               alt="Dibujo animado de la serie Pokemon"
             />
-            <h3 class="pokemonCard__name">${this.name}</h3>
-            <p class="pokemonCard__info">Type:${this.type}</p>
-          </li>
+            <img
+              class="pokemonCard__image"
+              src="${this.pokemon.sprites.back_default}"
+              alt="Dibujo animado de la serie Pokemon"
+            />
+            <h3 class="pokemonCard__name">${this.pokemon.name}</h3>
+            <p class="pokemonCard__info">weight:${this.pokemon.weight}</p>
+            <p class="pokemonCard__info">heightt:${this.pokemon.height}</p>
+            <p>${this.pokemon.id}</p>
     `;
   }
 }
 
-export default PokemonCardComponent;
+export default PokemoListComponent;
