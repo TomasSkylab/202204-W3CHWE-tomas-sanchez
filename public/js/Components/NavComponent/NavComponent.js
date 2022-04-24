@@ -8,8 +8,7 @@ class NavComponent extends Component {
   }
 
   render() {
-    this.element.innerHTML = `
-     <h1 class="header__text">Pokemon</h1>
+    this.element.innerHTML = `<h1 class="header__text">Pokemon</h1>
         <nav>
           <ul class="header__nav">
             <li><a href="">Pokemon list</a></li>
