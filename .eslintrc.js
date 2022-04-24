@@ -10,5 +10,15 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
+    "import/extensions": "off",
+    "no-new": "off",
+  },
 };
