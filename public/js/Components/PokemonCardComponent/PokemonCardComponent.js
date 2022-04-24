@@ -7,8 +7,8 @@ class PokemonCardComponent extends Component {
 
   image;
 
-  constructor(parenElement, name, image, type) {
-    super(parenElement, "ul", "pokemonCard");
+  constructor(parentElement, name, image, type) {
+    super(parentElement, "ul", "pokemonCard");
     this.name = name;
     this.image = image;
     this.type = type;

@@ -1,11 +1,11 @@
 class Component {
   element;
 
-  constructor(parenElement, tag, className) {
+  constructor(parentElement, tag, className) {
     this.element = document.createElement(tag);
     this.element.className = className;
 
-    parenElement.append(this.element);
+    parentElement.append(this.element);
   }
 }
 
