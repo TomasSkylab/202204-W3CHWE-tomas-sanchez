@@ -15,8 +15,7 @@ class NavComponent extends Component {
             <li><a href="">Pokemon list</a></li>
             <li><a href="">Pokemon fav</a></li>
           </ul>
-        </nav>
-    `;
+        </nav> `;
   }
 }
 
