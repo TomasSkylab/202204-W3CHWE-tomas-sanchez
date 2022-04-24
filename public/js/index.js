@@ -1,7 +1,7 @@
 import ButtonFooterComponent from "./Components/ButtonFooterComponent/ButtonFooterComponent.js";
 import MainComponent from "./Components/MainComponent/MainComponent.js";
 import NavComponent from "./Components/NavComponent/NavComponent.js";
-import PokemonCardComponent from "./Components/PokemonCardComponent/PokemonCardComponent.js";
+import PokemoListComponent from "./Components/PokemonListComponent/PokemonListComponent.js";
 
 const getPokemon = async () => {
   const response = await fetch(
@@ -18,6 +18,6 @@ const getPokemon = async () => {
 
 const container = document.querySelector(".container");
 new NavComponent(container);
-new PokemonCardComponent(container);
+new PokemoListComponent(container);
 new MainComponent(container);
 new ButtonFooterComponent(container);
